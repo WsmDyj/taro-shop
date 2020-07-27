@@ -1,0 +1,138 @@
+@import "@styles/theme.scss";
+
+.hot {
+  padding: 20px 18px;
+  background: $white;
+  box-sizing: border-box;
+  height: 490px;
+  margin: 0 20px;
+  border-radius: 15px;
+  box-shadow: 0 1px 4px #BFBCBC;
+}
+
+.hot-title {
+  color: $text-color;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  
+  &__img {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+  }
+}
+
+.hot-wrap {
+  margin: -100px 0 -20px;
+  height: 234px;
+  overflow: hidden;
+  position: relative;
+
+  @include eject(margin, 0);
+  @include eject(height, 390px);
+}
+
+.hot-swiper {
+  // NOTE RN 的 Swiper 需要有高度，否则会报错
+  height: 360px;
+  position: relative;
+
+  &__item {
+    width: 690px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  // 自定义banner指示器样式
+  &__dots {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0px;
+    z-index: 9;
+  }
+
+  &__dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin: 0 6px;
+    background-color: #CCCCCC;
+  }
+
+  &__active {
+    width: 20px;
+    height: 8px;
+    border-radius: 20px;
+    margin: 0 6px;
+    background-color: $jd-color;
+  }
+}
+
+.hot-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  &__img {
+    width: 210px;
+    height: 210px;
+    background: #EFEFED;
+  }
+
+  &__name {
+    margin-top: 10px;
+    font-size: 26px;
+    color: #303846;
+    width: 210px;
+    @include lamp-clamp(1);
+  }
+
+  &__info {
+    margin-top: 10px;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &__price {
+    color: $jd-color;
+    font-size: 26px;
+    line-height: 37px;
+    font-weight: bold;
+  }
+
+  &__origin {
+    padding-left: 20px;
+    color: $text-color-lighter;
+    font-size: 22px;
+    line-height: 30px;
+    text-decoration: line-through;
+    text-decoration-color: $text-color-lighter;
+  }
+
+  &__coupon {
+    margin-top: 10px;
+    width: 196px;
+    height: 45px;
+    line-height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    text-align: center;
+    border: 1PX solid $jd-color;
+
+    &-txt {
+      font-size: 22px;
+      color: $jd-color;
+    }
+  }
+}
+
+.hot-item__fill {
+  width: 210px;
+  height: 100%;
+}

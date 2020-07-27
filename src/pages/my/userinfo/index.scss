@@ -1,0 +1,41 @@
+@import "@styles/theme.scss";
+
+.user {
+  display: flex;
+  align-items: center;
+  &-info {
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+
+    &__origin {
+      font-size: 24px;
+      margin-left: 20px;
+      padding: 0 5px;
+      color: $jd-color;
+    }
+
+    &__name {
+      font-size: 40px;
+      font-weight: bold;
+      color: $text-color;
+      padding-bottom: 5px;
+      vertical-align: middle;
+    }
+
+    &__phone {
+      font-size: 28px;
+      color: $text-color-lighter;
+      display: flex;
+      align-items: center;
+      &-txt {
+        letter-spacing: 2px;
+      }
+      &-edit {
+        width: 40px;
+        height: 40px;
+        margin-left: 20px;
+      }
+    }
+  }
+}

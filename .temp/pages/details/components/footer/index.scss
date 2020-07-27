@@ -1,0 +1,66 @@
+@import "@styles/theme.scss";
+
+.item-footer {
+  @include border(top, 1px, solid, $border-color);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  display: flex;
+  background: #ffffff;
+  padding-bottom: constant(safe-area-inset-bottom);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.item-footer__nav {
+  height: 106px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  @include border(right, 1px, solid, $border-color);
+  &:last-child {
+    border-right: 0;
+  }
+
+  &-img {
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+  }
+
+  &-name {
+    color: $text-color;
+    padding-top: 10px;
+    font-size: 24px;
+    line-height: 24px;
+    vertical-align: middle;
+  }
+}
+
+.item-footer__button {
+  height: 106px;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  &-txt {
+    color: #fff;
+    font-size: 32px;
+    line-height: 36px;
+    padding-left: 10px;
+  }
+}
+
+.share {
+  background: #F0814D;
+}
+
+.buy {
+  background: #DD302A;
+}
+

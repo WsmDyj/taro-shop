@@ -1,0 +1,23 @@
+@import "@styles/theme.scss";
+
+.profit-swiper {
+  height: 70px;
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+ 
+  &__icon {
+    width: 37px;
+    height: 34px;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+
+  &__desc {
+    height: 34px;
+    font-size: 26px;
+    color: $text-color;
+    vertical-align: middle;
+  }
+}

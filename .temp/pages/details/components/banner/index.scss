@@ -1,0 +1,26 @@
+.details-banner {
+  background: #ffffff;
+  overflow: hidden;
+  height: 750px;
+  width: 100%;
+}
+.details__swiper {
+  height: 750px;
+}
+.details-banner__swiper {
+  // NOTE RN 的 Swiper 需要有高度，否则会报错
+  height: 750px;
+
+  &-item {
+    height: 750px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    &-img {
+      height: 750px;
+      width: 100%;
+      overflow: hidden;
+    }
+  }
+}

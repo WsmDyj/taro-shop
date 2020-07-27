@@ -1,0 +1,23 @@
+@import "@styles/theme.scss";
+
+.grid {
+  background: #fff;
+  padding: 10px 20px;
+  display: flex;
+  min-height: 288px;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+
+.grid-item {
+  margin: 10px 20px;
+  &__img {
+    width: 80px;
+    height: 80px;
+  }
+  
+  &__txt {
+    font-size: 24px;
+    color: $text-color;
+  }
+}

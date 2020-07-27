@@ -1,0 +1,60 @@
+@import "@styles/theme.scss";
+
+.recommend {
+  margin-top: 10px;
+  background: #ffffff;
+}
+
+.recommend__title {
+  display: flex;
+  flex-direction: row;
+  padding: 0 30px;
+  align-items: center;
+  height: 100px;
+
+  &-txt {
+    color: $black;
+    font-size: 34px;
+    line-height: 34px;
+    font-weight: bold;
+  }
+}
+
+.recommend__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0 15px;
+
+  &-item {
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px 40px;
+    width: 50%;
+
+    &-info {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &-name {
+      color: $text-color;
+      font-size: 28px;
+      line-height: 40px;
+      @include text-ellipsis;
+    }
+
+    &-price-wrap {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    &-price {
+      color: $jd-color;
+      font-size: 32px;
+      line-height: 48px;
+    }
+  }
+}

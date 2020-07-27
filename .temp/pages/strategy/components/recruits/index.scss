@@ -1,0 +1,39 @@
+@import "@styles/theme.scss";
+
+.recruits {
+  height: 100%;
+  background: $bg-color;
+  padding-bottom: 20px;
+  overflow: hidden;
+}
+.porit {
+  color: $jd-color;
+  font-weight: 500;
+}
+
+.recruits-item {
+  display: flex;
+  flex-direction: column;
+  background: $white;
+  padding: 0 30px;
+  margin: 20px 20px;
+  border-radius: 15px;
+  // box-shadow: 0 1px 4px #bfbcbc;
+
+  &__icon {
+    width: 42px;
+    height: 42px;
+    margin-right: 8px;
+  }
+
+  &__content {
+    font-size: 28px;
+    padding: 20px 0;
+    color: $text-color-light;
+  }
+  &__other {
+    font-size: 28px;
+    color: $text-color-light;
+    padding-bottom: 20px;
+  }
+}

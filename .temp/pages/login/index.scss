@@ -1,0 +1,79 @@
+@import "@styles/theme.scss";
+
+.login {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.login-title {
+  min-height: 50vh;
+  @include flexcolumn($jc:center, $ai: center);
+
+  &__img {
+    width: 196px;
+    height: 196px;
+    border-radius: 15px;
+  }
+  
+  &__desc {
+    margin-top: 30px;
+    @include flexcolumn($jc:none, $ai: center);
+    &-brand {
+      color: $text-color;
+      font-size: 38px;
+      &-txt {
+        padding: 0 20px;
+        position: relative;
+        font-weight: 350;
+        &:after {
+          content: "";
+          position: absolute;
+          width: 1PX;
+          right: 2px;
+          height: 58%;
+          top: 60%;
+          transform: translate(0, -60%);
+          background-color: $text-color;
+        }
+        &:last-child:after {
+          display: none;
+        }
+      }
+    }
+  }
+  &__txt {
+    font-size: 30px;
+    color: $text-color;
+    letter-spacing: 6px;
+    &:last-child {
+      margin-top: 15px;
+    }
+  }
+}
+
+
+.login-buttons {
+  width: 90%;
+  margin-top: 15vh;
+
+  .login-button {
+    margin-bottom: 30px;
+
+    &__qy {
+      color: $white;
+      background: #2782D7;
+    }
+  }
+}
+
+.login-footer {
+  position: absolute;
+  bottom: 40px;
+  font-weight: 300;
+  font-size: 28px;
+  letter-spacing: 3px;
+  color: $text-color-lighter;
+}

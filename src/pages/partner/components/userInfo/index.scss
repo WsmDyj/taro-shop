@@ -1,0 +1,49 @@
+@import "@styles/theme.scss";
+
+.people-container {
+  background: $white;
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.hoverClass {
+  background: $bg-color;
+}
+
+.people-info {
+  flex: 1;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 30px;
+  @include border(bottom, 1px, solid, $border-color);
+ 
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__name {
+    font-size: 30px;
+    line-height: 32px;
+    color: $text-color;
+  }
+
+  &__desc {
+    font-size: 24px;
+    color: $text-color-light;
+  }
+}
+
+.people-info__more {
+  font-size: 26px;
+  color: $text-color-lighter;
+  vertical-align: middle;
+}

@@ -1,0 +1,46 @@
+
+@import "@styles/theme.scss";
+
+.reflect {
+  margin: 0px 30px;
+}
+
+.reflect-title {
+  display: flex;
+  align-items: center;
+  &__icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+}
+
+.reflect-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  background: #fff;
+  height: 120px;
+  border-radius: 17px;
+  padding: 0 40px;
+  box-shadow: $box-shadow;
+  
+  &__cash {
+    color: $jd-color;
+    line-height:56px;
+    &-icon {
+      font-weight: 600;
+      font-size: 32px;
+      margin-right: 5px;
+    }
+    &-count {
+      font-weight: 800;
+      font-size: 40px;
+    }
+  }
+
+  &__button {
+    color: $white;
+  }
+}

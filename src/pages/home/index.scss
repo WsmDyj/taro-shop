@@ -1,0 +1,33 @@
+@import "@styles/theme.scss";
+
+.home {
+  position: relative;
+  height: 100%;
+}
+
+.home-wrpper {
+  padding-top: 175px;
+  background: $bg-color;
+
+  &__bg {
+    position: absolute;
+    top: 175px;
+    left: 0;
+    width: 100%;
+    height: 200px;
+  }
+
+  .home-header {
+    width: 100%;
+    background: #fff;
+  }
+}
+
+.goods-wrapper {
+  padding-top: 175px;
+  background: $bg-color;
+  &__item {
+    background: $white;
+    padding: 0 20px;
+  }
+}

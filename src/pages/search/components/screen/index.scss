@@ -1,0 +1,54 @@
+@import "@styles/theme.scss";
+
+.screen {
+  position: fixed;
+  width: 100%;
+  top: 84px;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+.screen-tabs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25px;
+  height: 80px;
+  border-bottom: 1PX solid $border-color;
+  border-top: 1PX solid $border-color;
+  background-color: $white;
+}
+
+.tab-item {
+  display: flex;
+  align-items: center;
+}
+
+.tab-item__name {
+  color: $text-color;
+  font-size: 28px;
+  &--active {
+    color: $jd-color;
+  }
+}
+
+.tab-item__icon {
+  width: 18px;
+  height: 22px;
+  margin-left: 6px;
+}
+
+.screen-switch {
+  background-color: $white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 0 25px;
+  @include border(bottom, 1px, solid, $border-color);
+  &__title {
+    font-size: 28px;
+    color: $text-color;
+  }
+}

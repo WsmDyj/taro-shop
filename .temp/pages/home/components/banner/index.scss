@@ -1,0 +1,49 @@
+ @import "@styles/theme.scss";
+
+.banner {
+  margin: -40px 0 -40px;
+  overflow: hidden;
+  height: 340px;
+  margin: 0;
+  position: relative;
+  background: transparent;
+  width: 100%;
+}
+
+.banner-swiper {
+  height: 340px;
+  width: 710px;
+  background: #EFEFED;
+  text-align: center;
+  overflow: hidden;
+  transform: translateY(0); // 设置banner-swiper的边框角度
+  border-radius: 14px;
+  margin: 0 auto;
+  position: relative;
+
+  &__dots {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+    z-index: 9;
+  }
+
+  &__dot {
+    width: 18px;
+    height: 6px;
+    border-radius: 20px;
+    margin: 0 6px;
+    background-color: $white;
+  }
+
+  &__active {
+    width: 25px;
+    height: 6px;
+    border-radius: 20px;
+    margin: 0 6px;
+    background-color: $jd-color;
+  }
+}

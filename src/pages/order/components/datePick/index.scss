@@ -1,0 +1,31 @@
+@import "@styles/theme.scss";
+
+.pick {
+  position: fixed;
+  width: 100%;
+  top: 60px;
+  z-index: 99;
+  font-size: 0;
+  @include flexcenter($jc:center, $ai:center);
+  height: 80px;
+  background: $white;
+  @include border(bottom, 1PX, solid, $bg-color);
+}
+
+.pick-txt {
+  font-size: 26px;
+  color: $text-color-light;
+  margin: 0 10px;
+  vertical-align: middle;
+}
+
+.pick-dateTxt {
+  font-size: 26px;
+  color: $jd-color;
+  padding: 0 10px;
+  vertical-align: middle;
+}
+
+.pick-search {
+  margin-left: 20px;
+}

@@ -1,0 +1,1 @@
+export const PICKER_GOODS = 'PICKER_GOODS';

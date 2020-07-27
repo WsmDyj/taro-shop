@@ -1,0 +1,28 @@
+@import "@styles/theme.scss";
+
+.membar {
+  background: $bg-color;
+}
+
+.user-profile__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+}
+
+.user-profile__extension {
+  position: relative;
+  padding-top: 45px;
+}
+
+.user-profile__profit {
+  margin-top: 30px;
+  position: relative;
+}
+
+
+.user-profile__order {
+  padding: 0px 0 40px 0;
+}

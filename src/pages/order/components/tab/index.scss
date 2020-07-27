@@ -1,0 +1,11 @@
+@import "@styles/theme.scss";
+
+.order-content {
+  background: $bg-color;
+  margin-bottom: 20px;
+  min-height: 800px;  // 防止点击tab切换失去高度
+}
+
+.order-item {
+  margin-top: 10px;
+}

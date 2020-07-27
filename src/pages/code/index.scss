@@ -1,0 +1,136 @@
+@import "@styles/theme.scss";
+
+.code {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+}
+
+.code-logo {
+  color: $white;
+  width: 100%;
+  @include flexcolumn($jc: none, $ai: center);
+
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 753px;
+  }
+
+  &__title {
+    position: relative;
+    margin-top: 100px;
+    width: 220px;
+    height: 162px;
+    font-size: 50px;
+    font-weight: normal;
+    color:rgba(255,255,255,1);
+    line-height: 106px;
+
+    &-img {
+      width: 193px;
+      height: 178px;
+    }
+
+    &-brand {
+      position: relative;
+      margin-top: 30px;
+      height: 56px;
+      font-size: 40px;
+      color:rgba(255,255,255,1);
+      line-height: 56px;
+      font-weight: 300;
+    }
+
+    &-txt {
+      padding: 0 20px;
+      position: relative;
+      &:after {
+        content: "";
+        position: absolute;
+        width: 1PX;
+        right: 2px;
+        height: 60%;
+        top: 50%;
+        transform: translate(0, -50%);
+        background-color: #F0F0F0;
+      }
+      &:last-child:after {
+        display: none;
+      }
+    }
+  }
+}
+
+.code-content {
+  height: 849px;
+  @include flexcolumn($jc: none, $ai: center);
+  text-align: center;
+  &__bg {
+    position: absolute;
+    height: 849px;
+    margin-top: 50%;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  &__input {
+    position: relative;
+    font-size: 45px;
+    margin-top: 10%;
+    &-txt {
+      font-size: 45px;
+      color:$text-color-lighter;
+      letter-spacing: 2px;
+      line-height: 63px;
+    }
+  }
+
+  &__help {
+    font-size: 28px;
+    font-weight: 300;
+    height: 40px;
+    line-height: 40px;
+    color:#D22925;
+
+    &-txt {
+      padding-left: 4px;
+      vertical-align: middle;
+    }
+  }
+}
+
+.code-options {
+  @include flexcolumn($jc:none, $ai: center);
+  position: fixed;
+  width: 100%;
+  bottom: 15%;
+  font-size: 30px;
+  color: $text-color-lighter;
+
+  &__button {
+    width: 700px;
+    height: 90px;
+    background:rgba(249,250,251,1);
+    font-size: 42px;
+    line-height: 90px;
+    text-align: center;
+    border-radius: 8px;
+    margin: 20px 0;
+    border: 1PX solid $text-color-lighter;
+  }
+
+  &__service {
+    font-size: 26px;
+    position: fixed;
+    bottom: 40px;
+    &-txt {
+      color: #409efe;
+    }
+  }
+}

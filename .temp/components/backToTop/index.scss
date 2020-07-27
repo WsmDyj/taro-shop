@@ -1,0 +1,28 @@
+@import '@styles/theme.scss';
+
+.back {
+  width: 80px;
+  height: 80px;
+  font-size: 0;
+  overflow: hidden;
+  background-color: rgba(0,0,0,.7);
+  border-radius: 50%;
+  position: fixed;
+  right: 30px;
+  z-index: 100;
+  margin-bottom: env(safe-area-inset-bottom);
+  margin-bottom: constant(safe-area-inset-bottom);
+  bottom: 200px;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: 32px 40px;
+    background-image: url(https://img11.360buyimg.com/ling/jfs/t1/106887/20/12257/295/5e466be0Eec8b2a05/2c15d31f3f3f8bbc.png);
+  }
+}
+

@@ -1,0 +1,110 @@
+@import "@styles/theme.scss";
+
+.home-menu {
+  height: 80px;
+  width: 100%;
+  position: fixed !important;
+  top: 96px;
+  left: 0;
+  z-index: 999;
+  color: #fff;
+  position: relative;
+
+  .home-menu__list {
+    width: 90%;
+  }
+}
+
+.home-menu-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 80px;
+  width: 100%;
+}
+
+.home-menu__accordion {
+  position: absolute;
+  width: 10%;
+  text-align: center;
+  display: flex;
+  height: 45px;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  right: 0;
+  top: 10px;
+  &:before {
+    content: "";
+    position: absolute;
+    left: -12px;
+    top: 50%;
+    width: 12px;
+    height: 60px;
+    background: url(https://img11.360buyimg.com/ling/jfs/t1/90695/25/12001/342/5e466cdcEeb7860a4/9984c6146987c345.png)
+      no-repeat;
+    background-size: 100% 100%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  &-icon {
+    transition: transform 0.2s ease;
+    transform-origin: center;
+    &--open {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.home-menu__content {
+  height: 0;
+  overflow: hidden;
+  &-open {
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    position: relative;
+  }
+  &-wrapper {
+    transform: translateY(-100%);
+    transition: transform 0.5s cubic-bezier(0, 0, 0.25, 1);
+  }
+  &-animation {
+    transform: translateY(0);
+  }
+
+  &-title {
+    background: #fff;
+    height: 80px;
+    line-height: 80px;
+    color: $text-color-light;
+    padding: 0 20px;
+    font-size: 28px;
+    @include border(bottom, 1px, solid, $border-color);
+  }
+
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    background: #fff;
+    padding: 10px 20px 20px 20px;
+    width: 100%;
+  }
+  &-item {
+    font-size: 28px;
+    width: 120px;
+    height: 60px;
+    background: #f7f7f7;
+    border-radius: 36px;
+    text-align: center;
+    line-height: 60px;
+    color: $text-color-light;
+    margin: 10px 10px;
+
+    &--active {
+      color: $jd-color;
+      background: #fff;
+      border: 1PX solid $jd-color;
+    }
+  }
+}

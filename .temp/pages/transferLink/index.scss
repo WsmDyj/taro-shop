@@ -1,0 +1,16 @@
+@import "@styles/theme.scss";
+
+.transfer-link {
+  height: 100%;
+
+  &__buttons {
+    margin: 40px 60px;
+  }
+
+  &__button {
+    margin-top: 40px;
+    background: $bg-color;
+    color: $black;
+    border: 1PX solid $border-color;
+  }
+}

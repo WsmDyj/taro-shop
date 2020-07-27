@@ -1,0 +1,2 @@
+export const SEARCH_GOODS = 'SEARCH_GOODS'
+export const CANCEL_SEARCH = 'CANCEL_SEARCH'

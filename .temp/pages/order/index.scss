@@ -1,0 +1,43 @@
+@import "@styles/theme.scss";
+
+.order-cotainer {
+  background: $bg-color;
+  .at-tabs__header {
+    position: fixed;
+    z-index: 9;
+    top: 138px;
+    @include border(bottom, 1PX, solid, $bg-color);
+  }
+  .at-tabs__body {
+    padding-top: 178px;
+  }
+}
+
+.order-type {
+  width: 100%;
+  .at-segmented-control {
+    position: fixed;
+    z-index: 99;
+    height: 60px;
+    line-height: 60px;
+  }
+  .at-segmented-control__item {
+    height: 60px;
+    padding: 0;
+    background: $white;
+  }
+  .at-segmented-control__item--active {
+    height: 60px;
+    background: $jd-color;
+  }
+}
+
+.active {
+  color: $jd-color;
+  font-weight: bold;
+  @include border(bottom, 2PX, solid, $jd-color);
+}
+
+.order-cotainer__tab {
+  padding-top: 40px;
+}

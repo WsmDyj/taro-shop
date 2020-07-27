@@ -1,0 +1,71 @@
+@import "@styles/theme.scss";
+
+.order {
+  padding: 20px 30px;
+  background: $white;
+
+  &-prift {
+    color: $jd-color;
+    font-size: 26px;
+    font-weight: bold;
+  }
+}
+
+.order-info {
+  &__list {
+    @include flexcenter($jc:space-between, $ai:center);
+    font-size: 24px;
+    color: $text-color-light;
+    margin-bottom: 5px;
+  }
+}
+
+.order-goods {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 20px;
+
+  &__img {
+    width: 210px;
+    height: 210px;
+    border-radius: 4px;
+  }
+}
+
+.order-goods__info {
+  flex: 1;
+  height: 210px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &--title {
+    font-size: 26px;
+    color: $black;
+    @include lamp-clamp(2);
+  }
+
+  &--origin {
+    font-size: 22px;
+    padding: 4px 7px;
+    border-radius: 8px;
+    margin-right: 10px;
+    color: $white;
+    background-color: #E1251B;
+    vertical-align: middle;
+  }
+
+  &--name {
+    vertical-align: middle;
+  }
+
+  &--status {
+    @include flexcenter($jc:space-between, $ai:center);
+    margin-top: 5px;
+    font-size: 24px;
+    color: $text-color-light;
+  }
+}
+
+

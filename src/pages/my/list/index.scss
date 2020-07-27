@@ -1,0 +1,36 @@
+@import "@styles/theme.scss";
+
+.list {
+  background: $white;
+} 
+
+.hoverClass {
+  opacity: $opacity-active;
+}
+
+.list-item {
+  display: flex;
+  height: 96px;
+  padding: 0 20px;
+  justify-content: space-between;
+  align-items: center;
+  @include border(bottom, 1px, solid, $border-color);
+  &:last-child {
+    border-bottom: none;
+  }
+  &__title {
+    display: flex;
+    align-items: center;
+
+    &-img {
+      width: 30px;
+      height: 30px;
+    }
+
+    &-name {
+      font-size: 30px;
+      color: $text-color;
+      margin-left: 20px;
+    }
+  }
+}

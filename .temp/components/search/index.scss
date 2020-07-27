@@ -1,0 +1,72 @@
+@import "@styles/theme.scss";
+
+.search {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  padding: 0 25px;
+  width: 100%;
+  z-index: 99;
+  position: relative;
+  height: 96px;
+  &-wrap {
+    height: 96px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    position: relative;
+
+    &__change {
+      display: flex;
+      align-items: center;
+      &-img {
+        margin-right: 20px;
+        width: 40px;
+        height: 40px;
+      }
+      &-desc {
+        color: $white;
+        font-size: 26px;
+      }
+    }
+    
+    &__input {
+      flex: 1;
+      height:60px;
+      padding-left: 20px;
+      border-radius:30px;
+      font-size: 20px;
+      margin-left: 20px;
+      background: $white;
+      @include flexcenter($jc: none, $ai: center);
+
+      &-img {
+        width: 28px;
+        height: 28px;
+      }
+      
+      &-txt {
+        color: $placeholder;
+        font-size: 26px;
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+.search-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.search-border {
+  @include border(bottom, 1px, solid, $border-color);
+  .search-wrap__input {
+    border: 1px solid $placeholder;
+    background: #F9F9F9;
+    @include hairline(border-width);
+  }
+}

@@ -1,0 +1,68 @@
+@import "@styles/theme.scss";
+
+.profit {
+  margin: 0px 30px;
+  background: #fff;
+  height: 360px;
+  border-radius: 17px;
+  box-shadow: $box-shadow;
+  padding: 30px 40px;
+  box-sizing: border-box;
+
+  &-title {
+    font-size: 32px;
+    height: 60px;
+    font-weight: bold;
+    line-height:45px;
+    color: $text-color;
+  }
+}
+
+.profit-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 25px;
+  border-bottom: 1PX solid $border-color;
+  .profit-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    &__split {
+      width: 1PX;
+      height: 170px;
+      background: $border-color;
+    }
+    &__cash {
+      color: $jd-color;
+      font-weight: 800;
+      font-size: 40px;
+      line-height:56px;
+    }
+    &__desc {
+      color: #404040;
+      padding-top: 10px;
+      font-size: 24px;
+      line-height: 33px;
+    }
+    
+    &__button {
+      width:164px;
+      height:57px;
+      background:rgba(255,236,231,1);
+      border-radius:31px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      margin-top: 20px;
+      font-size: 24px;
+      line-height:37px;
+      color: #E9570C;
+    }
+  }
+}
+.hoverClass {
+  opacity: $opacity-active;
+}

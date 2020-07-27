@@ -1,0 +1,33 @@
+@import "@styles/theme.scss";
+
+.cate-menu {
+  // padding-top: 30px;
+  background: #F9F9F9;
+  height: 100%;
+}
+
+.cate-menu__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 90px;
+  border: 0 solid #F9F9F9;
+  border-left-width: 6px;
+
+  &--active {
+    border-left-color: $jd-color;
+    background: $white;
+  }
+
+  &-name {
+    margin-left: -6px;
+    width: 100%;
+    color: #333;
+    font-size: 28px;
+    text-align: center;
+
+    &--active {
+      color: $jd-color;
+    }
+  }
+}

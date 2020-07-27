@@ -1,0 +1,96 @@
+@import "@styles/theme.scss";
+
+.guide {
+  padding-top: 15px;
+  background: $white;
+  box-sizing: border-box;
+  height: 350px;
+  margin: 20px 20px; 
+  border-radius: 15px;
+  box-shadow: 0 1px 4px #BFBCBC;
+}
+
+.guide-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  @include border(bottom, 1px, solid, $border-color);
+}
+
+.guide-item {
+  width: 145px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #030303;
+    height: 42px;
+    line-height: 42px;
+  }
+
+  &__describe {
+    width: 140px;
+    height: 33px;
+    line-height: 33px;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 6px;
+    color: #FF7921;
+  }
+
+  &__img {
+    height: 145px;
+    width: 145px;
+    background: $bg-color;
+    margin: 20px 0;
+  }
+}
+
+.guide-item:nth-child(2) {
+  .guide-item__describe {
+    font-size: 20px;
+    color: #fff;
+    background:#FF2B21;
+    border-radius: 17px;
+  }
+}
+
+.guide-item:nth-child(3) {
+  .guide-item__describe {
+    width: 102px;
+    background-size: 100%, 100%;
+    color: #fff;
+    background-image: url('../../../../assets/images/home-goods_coupons.jpg');
+  }
+}
+
+.guide-item:last-child {
+  .guide-item__title {
+    color:#FF251B;
+  }
+  .guide-item__describe {
+    color:#FF251B;
+    border-radius: 17px;
+    border:1PX solid #FF251B;
+  }
+}
+
+.guide-news {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+  padding: 0 20px;
+  &__icon {
+    width: 56px;
+    height: 40px;
+    margin-right: 20px;
+  }
+  .profit-swiper {
+    height: 70px;
+    flex: 1;
+  }
+}

@@ -1,0 +1,16 @@
+@import "@styles/theme.scss";
+
+.partner {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  .at-tabs__header {
+    padding: 0 30px !important;
+  }
+}
+
+.partner-content {
+  background: $bg-color;
+  height: 100%;
+  padding-top: 10px;
+}

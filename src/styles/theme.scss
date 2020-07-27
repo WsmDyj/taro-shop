@@ -1,0 +1,22 @@
+@import "./mixins.scss";
+
+/* 主题颜色 */
+$jd-color: #e93b3d;
+$disabled-color: #dddddd;
+$black: #000000;
+$white: #ffffff;
+$bg-color: #f5f5f5;
+
+/* 透明度 */
+$opacity-active: 0.6; // Button 等组件点击态额透明度
+
+/* 文本颜色 */
+$text-color: #333333;
+$text-color-light: #666666;
+$text-color-lighter: #999999;
+$placeholder: #bcbcbc;
+
+$border-color: #f2f2f2;
+$image-bg: #f4f4f4;
+
+$box-shadow: 0px 0px 6px 2px rgba(117, 115, 115, 0.2);

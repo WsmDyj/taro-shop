@@ -1,0 +1,86 @@
+@import "@styles/theme.scss";
+
+.find {
+  background: $white;
+  @include border(top, 1px, solid, $border-color);
+  padding-bottom: 20px;
+}
+
+.find-item {
+  margin: 20px 10px;
+  padding: 30px 30px;
+  background: $white;
+  overflow: hidden;
+  border-radius: 15px;
+  @include border(bottom, 1px, solid, $border-color);
+}
+
+.find-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 90px;
+  margin-bottom: 20px;
+
+  &__avatar {
+    width: 70px;
+    height: 70px;
+  }
+
+  &__left {
+    display: flex;
+    align-items: center;
+  }
+
+  &__info {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    &--name {
+      font-size: 32px;
+      font-weight: bold;
+      color: $text-color;
+    }
+    &--time {
+      font-size: 24px;
+      color: $text-color-light;
+    }
+  }
+}
+
+.find-content {
+  color: $text-color;
+  white-space: pre-wrap;
+  font-size: 28px;
+  margin-top: 20px;
+}
+
+.find-imgs {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  &__img {
+    width: 210px;
+    height: 210px;
+    border-radius: 8px;
+  }
+}
+
+.find-buttons {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  &__button {
+    height: 50px;
+    width: 150px;
+    line-height: 50px;
+    border-radius: 10px;
+    text-align: center;
+    background: $jd-color;
+    margin-right: 20px;
+    font-size: 24px;
+    color: $white;
+  }
+}

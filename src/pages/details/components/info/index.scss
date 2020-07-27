@@ -1,0 +1,154 @@
+@import "@styles/theme.scss";
+
+.info {
+  padding-top: 10px;
+  background: $white;
+  @include border(top, 1px, solid, $border-color);
+}
+
+.info-title {
+  display: flex;
+  align-items: center;
+  font-size: 32px;
+  @include lamp-clamp(2);
+  margin: 0 20px;
+
+  &__origin {
+    display: inline-block;
+    font-size: 28px;
+    line-height: 44px;
+    padding: 0px 15px;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin-right: 10px;
+    color: #fff;
+    background-color: $jd-color;
+  }
+
+  &__name {
+    font-weight: bold;
+    color: $text-color;
+  }
+}
+
+.info-comment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20px;
+  box-sizing: border-box;
+
+  &__split {
+    margin-left: 15px;
+  }
+
+  &__txt {
+    font-size: 24px;
+    color: $text-color-light;
+    vertical-align: middle;
+
+    &-origin {
+      @include decoration($size: 24px, $color: $text-color-light);
+    }
+  }
+}
+
+.info-coupons {
+  margin: 10px 20px 0 20px;
+  display: flex;
+
+  &__buy {
+    font-size: 24px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 6px;
+    padding: 0 8px;
+    background: #da1b20;
+    color: $white;
+  }
+  &__share {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    line-height: 40px;
+
+    &-count {
+      font-size: 24px;
+      width: 150px;
+      text-align: center;
+      color: #fff;
+      margin-left: 10px;
+      background-size: 100% 100%;
+      background-image: url("../../../../assets/images/goods-coupons.png");
+    }
+
+    &-button {
+      width: 180px;
+      text-align: center;
+      border: 1px solid $jd-color;
+      margin-right: 20px;
+      font-size: 22px;
+      color: $jd-color;
+    }
+  }
+}
+
+.info-price {
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__name {
+    color: $jd-color;
+    font-size: 32px;
+    padding-right: 10px;
+  }
+
+  &__num {
+    color: $jd-color;
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: bold;
+  }
+
+  &__options {
+    display: flex;
+  }
+
+  &__button {
+    height: 40px;
+    width: 150px;
+    line-height: 40px;
+    border-radius: 20px;
+    text-align: center;
+    background: $jd-color;
+    margin-right: 20px;
+    font-size: 22px;
+    color: $white;
+  }
+}
+
+.info-number {
+  padding: 0 20px;
+  height: 70px;
+  line-height: 70px;
+  @include border(top, 1px, solid, $border-color);
+  @include flexcenter($jc: none, $ai: center);
+  box-sizing: border-box;
+
+  &__name {
+    font-size: 26px;
+    color: $text-color-light;
+    margin-right: 20px;
+  }
+
+  &__options {
+    font-size: 24px;
+    color: $jd-color;
+  }
+}

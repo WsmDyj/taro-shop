@@ -1,0 +1,52 @@
+@import "@styles/theme.scss";
+
+.fans {
+  margin: 0px 30px;
+}
+
+.fans-title {
+  display: flex;
+  align-items: center;
+  &__icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  &__content {
+    flex: 1;
+  }
+}
+
+.fans-content {
+  background: #fff;
+  box-shadow: $box-shadow;
+  height: 160px;
+  border-radius: 17px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0px 12px;
+  .fans-item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    &__name {
+      font-size: 24px;
+      line-height: 24px;
+      color: $text-color-light;
+    }
+    &__count {
+      padding-top: 20px;
+      font-size: 34px;
+      line-height: 34px;
+      font-weight: bold;
+      color: $text-color;
+    }
+    &:nth-child(-n+2) {
+      @include split(-40px);
+    }
+  }
+}
+

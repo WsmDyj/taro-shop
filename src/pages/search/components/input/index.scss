@@ -1,0 +1,53 @@
+@import "@styles/theme.scss";
+
+.search-container {
+  height: 84px;
+  font-size: 0;
+  position: relative;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  z-index: 99;
+  top: 0;
+  width: 100%;
+  background: $white;
+  padding: 0 20px;
+
+  .search-input {
+    flex: 1;
+    height: 65px;
+    border-radius: 8px;
+    font-size: 30px;
+    padding-left: 65px;
+    padding-right: 10px;
+    background: #ededed;
+  }
+}
+
+.search-input__icon {
+  position: absolute;
+  left: 40px;
+}
+
+.search-buttons {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.search-button {
+  background: $jd-color;
+  color: $white;
+  font-size: 26px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 8px;
+  padding: 0 10px;
+  margin-left: 20px;
+  font-weight: 350;
+
+  &__cancel {
+    padding: 0 30px;
+    font-size: 28px;
+  }
+}

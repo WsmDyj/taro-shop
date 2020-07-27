@@ -1,0 +1,44 @@
+@import "@styles/theme.scss";
+
+.feedback {
+  background: $bg-color;
+  height: 100%;
+}
+
+.feedback-section {
+  background: $white;
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  margin-bottom: 20px;
+
+  &__title {
+    font-size: 32px;
+    color: $text-color;
+    padding: 10px 0;
+  }
+
+  &__conent {
+    padding-bottom: 10px;
+  }
+}
+
+
+.submit {
+ height: 88px;
+ overflow: hidden;
+ margin: 40px 20px 20px;
+ text-align: center;
+ line-height: 88px;
+ background-color: #409eff;
+ color: $white;
+ border-radius: 8px;
+}
+.hoverClass {
+  opacity: $opacity-active;
+}
+
+.feedback-bottom {
+  @include border(bottom, 1px, solid, $border-color);
+}
+

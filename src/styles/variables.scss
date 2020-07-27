@@ -1,0 +1,173 @@
+@import "@styles/theme.scss";
+
+/* 改变主题变量 */
+$color-brand: $jd-color;
+
+/* 分割线-我也是有底线的 */
+.at-divider__content {
+  background-color: $bg-color !important;
+}
+.at-divider {
+  height: 80px !important;
+}
+
+/* 修改首页tabs 样式 */
+
+.at-tabs--scroll {
+  position: relative;
+  .at-tabs__item {
+    font-size: 30px;
+    height: 80px !important;
+    padding: 10px 24px;
+    color: #fff !important;
+    opacity: 0.8;
+  }
+  .at-tabs__header {
+    background: transparent !important;
+  }
+  .at-tabs__item--active {
+    font-weight: bold;
+    opacity: 1;
+    .at-tabs__item-underline {
+      background-color: #fff;
+    }
+  }
+  .at-tabs__item-underline {
+    background-color: transparent;
+    height: 2px !important;
+    width: 50% !important;
+    bottom: 20%;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+  }
+}
+
+.at-tabs__item--active {
+  color: $jd-color;
+  font-weight: bold;
+
+  .at-tabs__item-underline {
+    background-color: $jd-color;
+    height: 4px !important;
+    width: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, 0) !important;
+  }
+}
+
+/* 修改 Textarea 样式 */
+.transfer-link {
+  .at-textarea {
+    border: none !important;
+    background-color: $bg-color !important;
+  }
+}
+.at-textarea {
+  border: none !important;
+}
+
+/* 会员页体现按钮样式 */
+.at-button--small.at-button--circle {
+  width: 155px;
+  height: 57px;
+  line-height: 57px;
+  background: linear-gradient(
+    304deg,
+    rgba(255, 67, 16, 1) 0%,
+    rgba(218, 27, 32, 1) 100%
+  );
+  border-radius: 31px;
+  color: $white;
+  font-size: 26px;
+}
+.at-button--secondary {
+  color: #fff;
+  border: none;
+}
+
+/* 修改 Search 样式 */
+.at-search-bar::after {
+  display: none;
+}
+
+/* 修改 switch 微信小程序 样式 */
+.wx-switch-input {
+  width: 92px !important;
+  height: 50px !important;
+}
+.wx-switch-input::before {
+  width: 89px !important;
+  height: 47px !important;
+}
+.wx-switch-input::after {
+  width: 48px !important;
+  height: 47px !important;
+} //中间小圆球
+/* 修改 switch h5 样式 */
+.weui-switch {
+  width: 92px !important;
+  height: 50px !important;
+}
+.weui-switch::before {
+  width: 88px !important;
+  height: 47px !important;
+}
+.weui-switch::after {
+  width: 47px !important;
+  height: 47px !important;
+} //中间小圆球
+
+/* 修改意见反馈页radio 微信小程序 样式 */
+radio {
+  transform: scale(0.9);
+  color: $text-color-light;
+}
+/* 修改意见反馈页radio h5 样式 */
+.weui-cells_checkbox {
+  font-size: 30px !important;
+  color: $text-color-light;
+}
+.weui-cells_checkbox .weui-icon-checked:before {
+  font-size: 48px !important;
+  color: $text-color-light;
+}
+
+.at-image-picker__choose-btn {
+  border: 1px solid #ccc !important;
+}
+
+.at-grid__flex .content-inner__text {
+  font-size: 25px;
+}
+
+.at-avatar--large {
+  width: 120px;
+  height: 120px;
+}
+
+/* 图片分享 */
+.at-curtain {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* 弹出说明 */
+.at-float-layout__container {
+  min-height: 10% !important;
+}
+.at-float-layout .layout-body {
+  min-height: 10% !important;
+}
+.at-float-layout .layout-body__content {
+  min-height: 10% !important;
+  color: $text-color !important;
+}
+.at-float-layout .layout-header {
+  background-color: #fff !important;
+  text-align: center;
+  color: #000;
+  font-weight: 500 !important;
+  border-bottom: 1px solid #f0f0f0 !important;
+}
+
+/* 引入 Taro UI 默认样式 */
+@import "~taro-ui/dist/style/index.scss";
